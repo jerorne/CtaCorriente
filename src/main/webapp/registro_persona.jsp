@@ -27,9 +27,6 @@
         <label for="telefono">Teléfono:</label>
         <input type="text" id="telefono" name="telefono" required><br><br>
 
-        <label for="nombre_mascota">Nombre de la Mascota:</label>
-        <input type="text" id="nombre_mascota" name="nombre_mascota" required><br><br>
-
         <input type="submit" value="Registrar">
     </form>
 

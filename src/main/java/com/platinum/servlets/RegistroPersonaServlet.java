@@ -25,10 +25,9 @@ public class RegistroPersonaServlet extends HttpServlet {
         String direccion = request.getParameter("direccion");
         String correo = request.getParameter("correo");
         String telefono = request.getParameter("telefono");
-        String nombreMascota = request.getParameter("nombre_mascota");
 
         try (Connection conn = DatabaseConnection.getConnection()) {
-            String sql = "INSERT INTO persona (rut, nombre, apellido, direccion, correo, telefono, nombre_mascota) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO persona (rut, nombre, apellido, direccion, correo, telefono) VALUES (?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, rut);
             stmt.setString(2, nombre);
@@ -36,7 +35,6 @@ public class RegistroPersonaServlet extends HttpServlet {
             stmt.setString(4, direccion);
             stmt.setString(5, correo);
             stmt.setString(6, telefono);
-            stmt.setString(7, nombreMascota);
             stmt.executeUpdate();
 
             response.sendRedirect("registro_persona_exitoso.jsp");

@@ -1,0 +1,7 @@
+com\platinum\servlets\LoginServlet.class
+com\platinum\servlets\LogoutServlet.class
+com\platinum\servlets\CrearCuentaServlet.class
+com\platinum\utils\DatabaseConnection.class
+com\platinum\servlets\RegistroPersonaServlet.class
+com\platinum\servlets\RegistroUsuarioServlet.class
+com\platinum\servlets\TransferenciaServlet.class

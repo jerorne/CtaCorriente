@@ -1,0 +1,3 @@
+com\platinum\steps\RunCucumberTest.class
+com\platinum\tests\DatabaseConnectionTest.class
+com\platinum\steps\LoginSteps.class
